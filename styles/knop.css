@@ -1,0 +1,73 @@
+#link_sobre {
+    background: var(--bg-color-1);
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: url(../res/svg/castro.svg) no-repeat right;
+    background-size: cover;
+}
+
+#top {
+    color: var(--color-txt);
+    padding: 10px;
+    background-color: var(--bg-color-1);
+    font-size: 30pt;
+}
+
+#about {
+    padding: 50px 25px;
+}
+
+#info {
+    padding: 10px;
+    background-color: var(--bg-color-2);
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    width: 800px;
+}
+
+#info p {
+    line-height: 1.6;
+}
+
+#info .dev {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    background-color: var(--bg-color-3);
+    align-items: center;
+    padding: 10px;
+}
+
+#info .dev img {
+    border-radius: 900000px;
+    width: 100px;
+    transition: width 0.1s;
+}
+
+@media screen and (min-width: 1280px) {
+    #info .dev img {
+        width: 150px;
+    }
+}
+
+#info .dev p {
+    margin: 5px 0;
+    font-size: 13pt;
+}
+
+#info .dev .devName {
+    font-size: 14pt;
+}
+
+.pic {
+    padding: 10px;
+    width: 300px;
+}
+

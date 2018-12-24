@@ -1,0 +1,24 @@
+#cadProds {
+    color: var(--color-txt);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16pt;
+}
+
+#cadProds:hover {
+    text-decoration: underline;
+    color: var(--color-txt-hover);
+}
+
+.prod {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-column-gap: 5px;
+    padding: 10px;
+}
+
+.prod #info {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 5px;
+}

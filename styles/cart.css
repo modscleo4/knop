@@ -1,0 +1,100 @@
+#cart {
+	background: var(--bg-color-1);
+}
+
+#content {
+	display: grid;
+	align-content: center;
+	justify-content: right;
+	background: url(../res/svg/khalil.svg) no-repeat right;
+	background-size: cover;
+}
+
+#top {
+	color: var(--color-txt);
+	padding: 10px;
+	background-color: var(--bg-color-1);
+	font-size: 30pt;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+#top #divBtn {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 15px;
+	justify-content: right;
+	align-items: center;
+	font-size: 14pt;
+}
+
+#top #divBtn .buttonSend {
+	color: #fefefe;
+	background-color: #3674cb;
+	border-radius: 4px;
+	transition: 0.1s;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+}
+
+#top #divBtn .buttonSend:hover {
+	background-color: #3897f5;
+}
+
+#about {
+	padding: 50px 25px;
+}
+
+#lasainha {
+	height: 200px !important;
+	display: block;
+}
+
+#info {
+	background-color: var(--bg-color-2);
+	width: 800px;
+	height: 500px;
+	display: grid;
+	grid-template-rows: 200px 100px;
+	justify-content: center;
+	align-content: center;
+	grid-gap: 30px;
+}
+
+#info span {
+	text-align: center;
+	font-size: 30px;
+}
+
+#cart-content {
+	background-color: var(--bg-color-2);
+	width: 800px;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+#cart-content .cart-item {
+	display: grid;
+	grid-template-columns: 100px auto auto;
+	grid-column-gap: 15px;
+	background: var(--bg-color-1);
+	margin: 10px;
+	padding: 10px;
+}
+
+#cart-content .cart-item img {
+	width: 100%;
+}
+
+#cart-content .cart-item .item-title {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+}
+
+#cart-content .cart-item .item-title,
+#cart-content .cart-item .price-remove {
+	padding: 15px;
+}

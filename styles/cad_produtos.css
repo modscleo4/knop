@@ -1,0 +1,23 @@
+#content {
+    padding: 20px;
+}
+
+#form_prod form {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 60px 60px 60px 60px 200px;
+}
+
+.cad_input {
+    display: grid;
+    align-content: center;
+}
+.cad_input input {
+    width: 420px;
+}
+
+#cad_radios {
+    display: grid;
+    grid-template-columns: 40px 100px;
+    align-content: center;
+}

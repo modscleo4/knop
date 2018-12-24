@@ -1,0 +1,303 @@
+.link_user {
+    background: var(--bg-color-1);
+}
+
+#content {
+    height: 730px;
+    padding: 40px;
+    font-size: 11pt;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: url(../res/svg/flash.svg) no-repeat right;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#content * {
+    color: var(--color-txt);
+}
+
+#mvl {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+    background: var(--bg-color-3);
+    padding: 40px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#mvl #logo {
+    text-align: center;
+}
+
+#mvl #logo img {
+    height: 60px;
+}
+
+#tabs {
+    width: 552px;
+    background: none;
+    border: none;
+}
+
+#tabs ul li {
+    padding: 8px 8px 1px;
+}
+
+.ui-tabs-nav {
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto;
+
+    background-color: #0000 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.ui-tabs-tab {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.ui-tabs-anchor {
+    background-color: #fff;
+}
+
+#tabs ul li a {
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+.ui-tabs-panel {
+    height: 550px;
+    background-color: #fff !important;
+}
+
+#fields {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+    width: 450px;
+}
+
+#fields form {
+    margin: 0;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-content: center;
+    padding: 5px 0;
+}
+
+#header h2 {
+    margin: 0;
+    cursor: pointer;
+}
+
+#header #btnSend {
+    display: grid;
+    justify-content: end;
+}
+
+#fields p {
+    background-color: #f00;
+    margin: -3px 0 0 0;
+    padding: 7px 5px 5px 5px;
+    color: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#fields #ns {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+}
+
+#fields #ns #nome,
+#fields #tc #telefone,
+#fields #passwords #password {
+    width: 221px;
+}
+
+#fields #ns #sobrenome,
+#fields #tc #celular,
+#fields #passwords #password_confirm {
+    width: 222px;
+}
+
+#fields #tc {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 5px;
+}
+
+#sexos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 25px 5px 10px 5px;
+}
+
+#fields p a {
+    color: inherit;
+}
+
+#fields #passwords {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+}
+
+#fields #rn {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+}
+
+#fields #rua {
+    width: 343px;
+}
+
+#fields #n {
+    width: 100px;
+}
+
+#fields #cup {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 5px;
+}
+
+#fields #cidade {
+    width: 225px;
+}
+
+#fields #uf {
+    width: 100px;
+}
+
+#fields #pais {
+    width: 110px;
+}
+
+.div_fields {
+    margin: 5px 0;
+}
+
+#fields #dadosLogin,
+#fields #dadosSenhas,
+#fields #dadosPessoais,
+#fields #dadosEndereco,
+#fields #dadosExcluir {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.open {
+    max-height: 1000px !important;
+}
+
+#fields .field {
+    width: 450px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    position: relative;
+}
+
+.field label {
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 10px;
+    transition: 0.1s;
+    font-size: 12pt;
+    color: #555;
+    cursor: text;
+    width: 450px;
+}
+
+#sexos label {
+    position: relative;
+    font-size: 11pt;
+    margin: 0;
+}
+
+.field input:focus ~ label {
+    color: #3674cb;
+}
+
+.field input[value]:not([value=""]) ~ label,
+.field input:focus ~ label,
+#lblData,
+#lblSexo {
+    margin-top: -45px;
+    margin-left: 5px;
+    font-size: 9pt;
+}
+
+.field input:-webkit-autofill ~ label {
+    margin-top: -45px;
+    margin-left: 5px;
+    font-size: 9pt;
+}
+
+.field .textInput,
+.field .dateInput {
+    border: none;
+    padding: 25px 5px 10px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+}
+
+.buttonSend {
+    color: #fefefe !important;
+    background-color: #0000;
+    border-radius: 4px;
+    transition: 0.1s;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    visibility: hidden;
+}
+
+.btnOpen {
+    visibility: visible;
+    background-color: #3674cb;
+}
+
+.buttonSend:hover {
+    background-color: #3897f5;
+}
+
+.address {
+    display: none;
+}
+
+#radExisting:checked ~ .address {
+    display: block;
+}
+
+.options {
+    display: none;
+}
+
+.address .radExistingAddress:checked ~ .options {
+    display: block;
+}

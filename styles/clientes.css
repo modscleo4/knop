@@ -1,0 +1,60 @@
+#link_admin {
+    background: var(--bg-color-1);
+}
+
+#tit {
+	padding-top: 10px;
+	background-color: var(--bg-color-3);
+	height: 100px;
+	font-size: 50px;
+	text-align: center;
+	align-content: center;
+}
+
+#list {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#list p {
+	margin:0;
+}
+
+#list #header,
+#list .body {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 75px 125px 225px 225px 75px 150px 150px 150px;
+    grid-column-gap: 10px;
+    text-align: left;
+}
+
+#list .body #opt a {
+    color: var(--color-txt);
+    text-decoration: none;
+}
+
+#list .body #opt a:hover {
+    color: var(--color-txt-hover);
+    text-decoration: underline;
+}
+
+#list #header:nth-child(odd) {
+    background-color: var(--bg-color-1);
+}
+
+#list .body:nth-child(even) {
+    background-color: var(--bg-color-2);
+}
+
+#p1, #p2 {
+	padding: 10px;
+}
+
+#p1 {
+	background-color: var(--bg-color-1);
+}
+
+#p2 {
+	background-color: var(--bg-color-2);
+}

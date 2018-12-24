@@ -1,0 +1,370 @@
+:root {
+	--dark-bg-color-1: #4e4e4e;
+	--dark-bg-color-2: #3e3e3e;
+	--dark-bg-color-3: #1e1e1e;
+	--dark-color-txt: #c6c6c6;
+	--dark-color-txt-hover: #d6d6d6;
+
+	--white-bg-color-1: #d7d7d7;
+	--white-bg-color-2: #e5e5e5;
+	--white-bg-color-3: #f4f4f4;
+	--white-color-txt: #3e3e3e;
+	--white-color-txt-hover: #4e4e4e;
+
+	--bg-color-1: #d7d7d7;
+	--bg-color-2: #e5e5e5;
+	--bg-color-3: #f4f4f4;
+	--color-txt: #3e3e3e;
+	--color-txt-hover: #4e4e4e;
+}
+
+* {
+	outline: 0;
+}
+
+::selection {
+	color: #2e2e2e;
+	background: #c6c6c6;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(lightblue, #639fff);
+	text-align: center;
+
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+
+	min-height: 100vh;
+}
+
+#theme-changer {
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+
+	cursor: pointer;
+
+	border: 3px solid var(--bg-color-1);
+	background-color: var(--bg-color-1);
+	color: #1e1e1e;
+	z-index: 9999;
+	border-radius: 50%;
+
+	background-image: url("../res/svg/moon.svg");
+	background-position: center;
+	background-size: cover;
+}
+
+#theme-changer:hover {
+	background-color: #7baeff;
+	border: 3px solid #7baeff;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+#main {
+	min-width: 1000px;
+	max-width: 1500px;
+	min-height: 800px;
+	margin: auto;
+
+	background-color: var(--bg-color-3);
+	color: var(--color-txt);
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+#navbar {
+	display: grid;
+	grid-template-columns: 480px auto 152px;
+	grid-template-rows: 60px;
+	padding-left: 32px;
+	padding-right: 32px;
+
+	background-color: var(--bg-color-2);
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+#navbar #content-left {
+	display: grid;
+	grid-template-columns: 0 102px auto auto auto auto auto;
+	grid-template-rows: 60px;
+	justify-content: left;
+	align-content: center;
+}
+
+#navbar #content-left #logo {
+	padding: 6px;
+}
+
+#navbar #content-left #logo img {
+	height: 100%;
+}
+
+#navbar .dropdown {
+	display: inline-block;
+	padding: 19px 15px 7px 15px;
+
+	border-bottom: 8px solid #0000;
+	color: var(--color-txt);
+
+	cursor: pointer;
+}
+
+#navbar .dropdown a {
+	color: var(--color-txt);
+}
+
+#navbar .dropdown:hover {
+	border-color: #639fff;
+}
+
+#navbar .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--bg-color-2);
+	color: var(--color-txt);
+	z-index: 3;
+	top: 60px;
+	margin-left: -15px;
+}
+
+#navbar .dropdown-content a {
+	display: block;
+	padding: 17px;
+
+	color: var(--color-txt);
+}
+
+#navbar .dropdown-content a:hover {
+	background-color: #639fff;
+	color: #fff;
+}
+
+#navbar .dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#navbar #content-right .dropdown-content {
+	margin-left: -120px;
+}
+
+#navbar #content-center {
+	display: grid;
+	grid-template-columns: 80px;
+	grid-template-rows: 60px;
+	justify-content: end;
+	align-content: center;
+}
+
+#navbar #search {
+	display: grid;
+	grid-template-columns: auto 60px;
+	grid-template-rows: 60px;
+	justify-content: end;
+	align-content: center;
+}
+
+#navbar #search img {
+	height: 30px;
+	cursor: pointer;
+	padding: 15px 15px 7px 15px;
+}
+
+#navbar #search #search-bar:focus ~ #search-icon img {
+	padding-bottom: 11px;
+	border-bottom: 4px solid #639fff;
+}
+
+#navbar #search img:hover {
+	padding-bottom: 7px !important;
+	border-bottom: 8px solid #639fff !important;
+}
+
+#search #search-bar {
+	padding: 8px 0 8px 0;
+	width: 0;
+	margin: 10px 10px 10px 0;
+
+	border: none;
+	background-color: var(--bg-color-3);
+	color: var(--color-txt);
+	border-radius: 2px;
+
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+#search:hover #search-bar, #search #search-bar:focus {
+	width: 400px;
+	padding: 8px;
+}
+
+#navbar #content-right {
+	display: grid;
+	grid-template-columns: 68px 84px;
+	grid-template-rows: 60px;
+	justify-content: center;
+	align-content: center;
+}
+
+#navbar #content-right #cart {
+	height: 30px;
+	cursor: pointer;
+	padding: 15px 15px 7px 15px;
+
+	border-bottom: 8px solid #0000;
+}
+
+#navbar #content-right #cart:hover {
+	border-color: #639fff;
+}
+
+#navbar #content-right #cart img {
+	height: 30px;
+}
+
+#navbar #content-right #user:hover {
+	border-color: #639fff;
+}
+
+#content {
+	background: var(--bg-color-1);
+}
+
+#footer {
+	background-color: var(--bg-color-2);
+	text-align: center;
+	font-size: 19px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto;
+	justify-content: center;
+	color: var(--color-txt);
+}
+
+#footer .links {
+	display: inline-block;
+	text-align: left;
+	margin: 25px 30px;
+	vertical-align: top;
+	min-width: 150px;
+}
+
+#footer .links div {
+	border-top: #639fff 1px solid;
+}
+
+#footer .links ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+#footer .links ul li {
+	padding: 5px 0;
+}
+
+#footer .links ul a {
+	text-decoration: none;
+	color: var(--color-txt);
+}
+
+#footer .links ul a:hover {
+	color: var(--color-txt-hover);
+}
+
+#footer #integrantes li {
+	font-size: 17px;
+	color: var(--color-txt);
+}
+
+#footer #backToTop {
+	width: 56px;
+	transition: bottom 0.1s;
+}
+
+#footer .top {
+	position: fixed;
+	bottom: -56px;
+	right: 28px;
+}
+
+#footer .mid {
+	position: fixed;
+	bottom: 28px;
+	right: 28px;
+}
+
+#footer .bot {
+	position: absolute;
+	margin-top: -28px;
+	right: 28px;
+}
+
+#footer #backToTop img {
+	width: 56px;
+}
+
+.popup {
+	width: 500px;
+	position: fixed;
+	margin: auto;
+	top: 20px;
+	left: 0;
+	right: 0;
+	background: rgb(241, 241, 241);
+	z-index: 1000;
+	color: #000;
+	border-radius: 5px;
+	font-size: 12pt;
+}
+
+.popup_content {
+	padding: 20px;
+}
+
+.popup_title {
+	margin-top: 0;
+	background-color: rgb(213, 213, 213);
+	color: #444;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 3px;
+	text-align: center;
+}
+
+.popup_buttons {
+	float: right;
+	padding: 10px 25px 20px 10px;
+}
+
+.popup_buttons button {
+	margin-left: 10px;
+	border: 1px #aaa solid;
+	padding: 2px 16px;
+	background-color: #fefefe;
+	border-radius: 4px;
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.popup_buttons button:hover {
+	border: 1px #94c3fb solid;
+	background-color: #3897f5;
+	color: #fefefe;
+}
+
+.popup_buttons button:focus {
+	background-color: #3897f5;
+	color: #fefefe;
+	border: 3px #94c3fb solid;
+}

@@ -1,0 +1,68 @@
+.link_user {
+    background: var(--bg-color-1);
+}
+
+#content {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.tabela_cf {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0;
+    padding: 20px;
+}
+
+.tabela_cf:nth-child(odd) {
+	background-color: var(--bg-color-1);
+}
+
+.tabela_cf:nth-child(even) {
+	background-color: var(--bg-color-2);
+}
+
+.tabela_cf > div {
+	padding: 10px;
+}
+
+.tabela_cf > #headers {
+	border-bottom: 1px solid var(--color-txt);
+	margin-bottom: 10px;
+}
+
+.tabela_cf #titulo a {
+    color: var(--color-txt);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.tabela_cf #titulo a:hover {
+    text-decoration: underline;
+}
+
+.tabela_cf #headers {
+    display: grid;
+    grid-template-columns: 125px 150px 325px 200px 100px 150px 200px;
+    padding-left: 10px;
+}
+
+.tabela_cf #compras {
+    padding-left: 10px;
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+.tabela_prods {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 125px 150px 325px 200px 100px 150px 200px;
+}
+
+#end {
+    text-align: center;
+    padding: 40px;
+}

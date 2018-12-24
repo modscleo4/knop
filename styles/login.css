@@ -1,0 +1,147 @@
+.link_login {
+    background: var(--bg-color-1);
+}
+
+#main {
+    background: none;
+}
+
+#content {
+    font-size: 11pt;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../res/svg/bicudao.svg) no-repeat right;
+    background-size: cover;
+}
+
+#div_login {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 40px;
+
+    background-color: var(--bg-color-3);
+    border-radius: 2px;
+    padding: 40px;
+    width: 350px;
+
+    text-align: left;
+}
+
+#div_login * {
+    color: var(--color-txt);
+}
+
+#div_login a:hover {
+    text-decoration: underline;
+}
+
+#div_login #logo {
+    text-align: center;
+}
+
+#div_login #logo img {
+    height: 60px;
+}
+
+#div_login #fields {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+}
+
+#div_login #fields p {
+    background-color: #f00;
+    margin: 0;
+    padding: 7px 5px 5px 5px;
+    color: #fff;
+}
+
+#div_login #fields p a {
+    color: inherit;
+}
+
+#div_login #fields .field {
+    /*width: 350px;*/
+}
+
+.field label {
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 10px;
+    transition: 0.1s;
+    font-size: 12pt;
+    cursor: text;
+    width: 350px;
+}
+
+.field input[value]:not([value=""]) ~ label,
+.field input:focus ~ label {
+    margin-top: -45px;
+    margin-left: 5px;
+    font-size: 9pt;
+}
+
+.field input:-webkit-autofill ~ label {
+    margin-top: -45px;
+    margin-left: 5px;
+    font-size: 9pt;
+}
+
+.field input:focus {
+    border-color: #3674cb;
+}
+
+.field input:focus ~ label {
+    color: #3674cb !important;
+}
+
+.field .textInput {
+    border: none;
+    padding: 25px 5px 10px 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    border-bottom: 1px solid #aaa;
+}
+
+#div_login #actions {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+}
+
+#div_login #actions #login_actions {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+#div_login #actions #login_actions .buttonSend {
+    color: #fefefe;
+    background-color: #3674cb;
+    border-radius: 4px;
+    transition: 0.1s;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+
+#div_login #actions #login_actions .buttonSend:hover {
+    background-color: #3897f5;
+}
+
+#div_login #actions #links {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+
+#div_login #actions #links #forgot {
+    text-align: right;
+}
